@@ -7,11 +7,12 @@
 | WIFI/BLE | DW1820A | Submodule 1028:0023 |
 ## Kext List
 | Purpose | Kext | Notes |
-| IDK but everyone use this | VirtualSMC.kext | |
-| IDK but everyone use this | Lilu.kext | |
-| IDK but everyone use this | WhateverGreen.kext | |
-| Audio | AppleALC.kext | |
-| Ethernet | IntelMausiEthernet.kext | |
+| --- | --- | --- |
+| IDK but everyone use this | VirtualSMC.kext |  |
+| IDK but everyone use this | Lilu.kext |  |
+| IDK but everyone use this | WhateverGreen.kext |  |
+| Audio | AppleALC.kext |  |
+| Ethernet | IntelMausiEthernet.kext |  |
 | Wi-Fi | AirportBrcmFixup.kext | WIFI work without this actually. The device information will show Thrid Party Card instead. |
 | BLE | BrcmNonPatchRAM2.kext | Modified, check commit history. |
-| BLE | BrcmPatchRAM2.kext | |
+| BLE | BrcmPatchRAM2.kext |  |
