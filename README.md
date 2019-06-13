@@ -8,9 +8,9 @@
 ## Kext List
 | Purpose | Kext | Notes |
 | --- | --- | --- |
-| IDK but everyone use this | VirtualSMC.kext |  |
-| IDK but everyone use this | Lilu.kext |  |
-| IDK but everyone use this | WhateverGreen.kext |  |
+| IDK | VirtualSMC.kext |  |
+| IDK | Lilu.kext |  |
+| IDK | WhateverGreen.kext |  |
 | Audio | AppleALC.kext |  |
 | Ethernet | IntelMausiEthernet.kext |  |
 | Wi-Fi | AirportBrcmFixup.kext | WIFI work without this actually. The device information will show Thrid Party Card instead. |
