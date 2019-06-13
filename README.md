@@ -55,9 +55,9 @@ I havn't firgure out how to upload firmware via macOS correctly.
 
 Using original `BrcmFirmwareData.kext` or `BrcmFirmwareRepo.kext`, I did see the bluetooth changed into version 5799 ( meaning firmware was uploaded ), but bluetooth won't work. It's hard to connect to bluetooth devices, and devices will keep disconnecting.
 
-I thought it might be the firmware in the original kext being too old, so I tried recompiled the kext with newest firmware extracted from newest driver. The version changed into 4689, but still bluetooth was not working correctly.
+I thought it might be the firmware in the original kext being too old, so I tried recompiling the kext with firmware extracted from newest driver. The version changed into 4689, but still bluetooth was not working correctly.
 
-And if I reboot into windows after this incorrect uploading, the device manager will told me that DW1820A was not correctly configured. I have to release the firmware by disconnecting the power supplys.
+And if I reboot into windows after this incorrect uploading, the device manager will told me that DW1820A was not correctly configured. I have to release the firmware first.
 
 3. #### Upload firmware via Windows
 
@@ -65,6 +65,6 @@ I must release the firmware first, or the card will enter a weird condition, as 
 
 Currently I'm uploading the firmware with `Windows`, firmware version 4689.
 
-After uploading, rebooting into macOS with `BrcmNonPatchRAM2.kext` and `BrcmPatchRAM2.kext`, the bluetooth will work.
+After uploading, rebooting into macOS with modified `BrcmNonPatchRAM2.kext` and original `BrcmPatchRAM2.kext`, the bluetooth will work.
 
 Someone mentioned he could upload the firmware via `Windows in virtual machine`. That should be able to save some rebooting.
