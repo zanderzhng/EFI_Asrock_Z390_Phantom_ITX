@@ -4,14 +4,12 @@
 <dict>
 	<key>BuildMachineOSBuild</key>
 	<string>17E202</string>
-	<key>CFBundleExecutable</key>
-	<string>BrcmFirmwareRepo</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.no-one.BrcmFirmwareStore</string>
+	<string>org.rehabman.injector.BrcmNonPatchRAM2</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>BrcmFirmwareRepo</string>
+	<string>BrcmNonPatchRAM2</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
@@ -40,28 +38,38 @@
 	<string>9E145</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>BrcmFirmwareStore</key>
+		<key>0a5c_6412 native</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.no-one.BrcmFirmwareStore</string>
+			<string>com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport</string>
 			<key>IOClass</key>
-			<string>BrcmFirmwareStore</string>
-			<key>IOMatchCategory</key>
-			<string>BrcmFirmwareStore</string>
+			<string>BroadcomBluetoothHostControllerUSBTransport</string>
 			<key>IOProviderClass</key>
-			<string>IOResources</string>
+			<string>IOUSBHostDevice</string>
+			<key>idProduct</key>
+			<integer>25618</integer>
+			<key>idVendor</key>
+			<integer>2652</integer>
 		</dict>
-	</dict>
-	<key>OSBundleCompatibleVersion</key>
-	<string>2.2.10</string>
-	<key>OSBundleLibraries</key>
-	<dict>
-		<key>com.apple.kpi.iokit</key>
-		<string>9.0</string>
-		<key>com.apple.kpi.libkern</key>
-		<string>9.0</string>
-		<key>com.apple.kpi.mach</key>
-		<string>9.0</string>
+		<key>0a5c_6412 no firmware</key>
+		<dict>
+			<key>#FirmwareKey</key>
+			<string>only load and unload native bluetooth</string>
+			<key>CFBundleIdentifier</key>
+			<string>com.no-one.BrcmNonPatchRAM2</string>
+			<key>DisplayName</key>
+			<string>DW1820A non patch</string>
+			<key>IOClass</key>
+			<string>BrcmPatchRAM2</string>
+			<key>IOMatchCategory</key>
+			<string>BrcmPatchRAM2</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBHostDevice</string>
+			<key>idProduct</key>
+			<integer>25618</integer>
+			<key>idVendor</key>
+			<integer>2652</integer>
+		</dict>
 	</dict>
 	<key>Source Code</key>
 	<string>https://github.com/RehabMan/BrcmPatchRAM.git</string>
