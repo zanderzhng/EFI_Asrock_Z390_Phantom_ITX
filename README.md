@@ -7,4 +7,4 @@
 | --- | --- | --- |
 | CPU | Intel i7 8700 |  |
 | MB | ASRock Z390 Phantom Gaming-ITX/ac |  |
-| WIFI/BLE | DW1820A(1028:0023) |  |
+| WIFI/BLE | DW1820A | Submodule 1028:0023 |
