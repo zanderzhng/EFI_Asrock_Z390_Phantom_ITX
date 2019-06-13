@@ -148,13 +148,13 @@
 			<key>PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>zz WLAN</string>
+				<string>WLAN</string>
 				<key>device_type</key>
-				<string>zz Airport Extreme</string>
+				<string>Airport Extreme</string>
 				<key>model</key>
-				<string>zz DW1820A (BCM4350) 802.11ac Wireless</string>
+				<string>DW1820A (BCM4350) 802.11ac Wireless</string>
 				<key>name</key>
-				<string>zz Airport</string>
+				<string>Airport</string>
 			</dict>
 		</dict>
 		<key>USB</key>
