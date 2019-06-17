@@ -43,7 +43,7 @@ Firmware Version says `  Firmware Version:	Broadcom BCM43xx 1.0 (7.77.61.2 AirPo
 
 DW1820A's bluetooth module requires [firmware uploading(RAMUSB)](https://github.com/RehabMan/OS-X-BrcmPatchRAM#brcmpatchram).
 
-If we disconnect the power supply and wait long enough (likely 5 minutes), the uploaded firmware will be released.
+By disconnecting the power supply and waiting long enough (likely 5 minutes), the uploaded firmware will be released.
 
 If we enter macOS now, without a bluetooth firmware uploader(`BrcmFirmwareData.kext` or `BrcmFirmwareRepo.kext`), the bluetooth won't work, and the [firmware version will be 4096](https://github.com/RehabMan/OS-X-BrcmPatchRAM#troubleshooting).
 
@@ -59,10 +59,10 @@ And if I reboot into windows after this incorrect uploading, the device manager 
 
 3. #### Upload firmware via Windows
 
-I must release the firmware first, or the card will enter a weird condition, as I mentioned above.
+The incorrect firmware must be released first, otherwise DW1820A will enter a weird state, as mentioned above.
 
-Currently I'm uploading the firmware with `Windows`, firmware version 4689.
+Currently I'm uploading the firmware with `Windows`, using driver downloaded from [DELL](https://www.dell.com/support/home/us/en/19/drivers/driversdetails?driverid=99v46&lwp=rt), firmware version 4689.
 
-After uploading, rebooting into macOS with modified `BrcmNonPatchRAM2.kext` and original `BrcmPatchRAM2.kext`, the bluetooth will work.
+After uploading, rebooting into macOS with only modified `BrcmNonPatchRAM2.kext` placed inside `clover/kexts/other`, the bluetooth will work. Although the manual metioned [it still depends on BrcmPatchRam2](https://github.com/RehabMan/OS-X-BrcmPatchRAM#installation).
 
 Someone mentioned he could upload the firmware via `Windows in virtual machine`. That should be able to save some rebooting.
