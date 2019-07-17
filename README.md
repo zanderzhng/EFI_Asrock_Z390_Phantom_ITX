@@ -43,7 +43,7 @@ Firmware Version says `  Firmware Version:	Broadcom BCM43xx 1.0 (7.77.61.2 AirPo
 
 DW1820A's bluetooth module requires [firmware uploading(RAMUSB)](https://github.com/RehabMan/OS-X-BrcmPatchRAM#brcmpatchram).
 
-By disconnecting the power supply and waiting long enough (likely 5 minutes), the uploaded firmware will be released.
+By shutting down the system ( maybe also disconnect the power supply ), and waiting long enough (likely 5 minutes), the uploaded firmware will be released.
 
 If we enter macOS now, without a bluetooth firmware uploader(`BrcmFirmwareData.kext` or `BrcmFirmwareRepo.kext`), the bluetooth won't work, and the [firmware version will be 4096](https://github.com/RehabMan/OS-X-BrcmPatchRAM#troubleshooting).
 
