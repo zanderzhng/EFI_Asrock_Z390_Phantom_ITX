@@ -19,9 +19,9 @@
 | BLE | BrcmPatchRAM2.kext |  |
 ## Researches
 
-* ### Wi-Fi
+### Wi-Fi
 
-1. #### Without AirportBrcmFixup.kext
+#### Without AirportBrcmFixup.kext
 
 DW1820A's Wi-Fi works OOB.
 
@@ -29,7 +29,7 @@ DW1820A's device ID `14e4:43a3` was included in `IO80211Family.kext`, and there'
 
 Sysinf will show `Third-Party Wireless Card`.
 
-2. #### With AirportBrcmFixup.kext
+#### With AirportBrcmFixup.kext
 
 Still no need to fake devide ID.
 
@@ -37,9 +37,9 @@ Sysinf will show `AirPort Extreme  (0x14E4, 0x23)`.
 
 Firmware Version says `  Firmware Version:	Broadcom BCM43xx 1.0 (7.77.61.2 AirPortDriverBrcmNIC-1305.8)`
 
-* ### Bluetooth
+### Bluetooth
 
-1. #### Release firmware.
+#### Release firmware.
 
 DW1820A's bluetooth module requires [firmware uploading(RAMUSB)](https://github.com/RehabMan/OS-X-BrcmPatchRAM#brcmpatchram).
 
@@ -47,7 +47,7 @@ By shutting down the system ( maybe also disconnect the power supply ), and wait
 
 If we enter macOS now, without a bluetooth firmware uploader(`BrcmFirmwareData.kext` or `BrcmFirmwareRepo.kext`), the bluetooth won't work, and the [firmware version will be 4096](https://github.com/RehabMan/OS-X-BrcmPatchRAM#troubleshooting).
 
-2. #### Upload firmware via macOS
+#### Upload firmware via macOS
 
 I havn't firgure out how to upload firmware via macOS correctly.
 
@@ -57,7 +57,7 @@ I thought it might be the firmware in the original kext being too old, so I trie
 
 And if I reboot into windows after this incorrect uploading, the device manager will told me that DW1820A was not correctly configured. I have to release the firmware first.
 
-3. #### Upload firmware via Windows
+#### Upload firmware via Windows
 
 The incorrect firmware must be released first, otherwise DW1820A will enter a weird state, as mentioned above.
 
