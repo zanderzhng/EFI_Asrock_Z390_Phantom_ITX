@@ -9,21 +9,20 @@
 ### Kext List
 | Purpose | Kext | Notes |
 | --- | --- | --- |
-| IDK | VirtualSMC.kext |  |
+| IDK | VirtualSMC.kext | With SMCProcessor.kext and SMCSuperIO.kext |
 | IDK | Lilu.kext |  |
 | IDK | WhateverGreen.kext |  |
 | Audio | AppleALC.kext |  |
 | Ethernet | IntelMausiEthernet.kext |  |
 | Wi-Fi | AirportBrcmFixup.kext | Wi-Fi work without this actually. The device information will show Thrid Party Card instead. |
 | BLE | BrcmNonPatchRAM2.kext | Modified, check commit history. |
-| BLE | BrcmPatchRAM2.kext |  |
 ## Researches
 
 ### Wi-Fi
 
 #### Without AirportBrcmFixup.kext
 
-DW1820A's Wi-Fi works OOB.
+DW1820A's Wi-Fi works OOB, which means you don't have to add any kext nor options for 
 
 DW1820A's device ID `14e4:43a3` was included in `IO80211Family.kext`, and there's no need to fake it into any card else in Clover's device tab.
 
@@ -31,7 +30,7 @@ Sysinf will show `Third-Party Wireless Card`.
 
 #### With AirportBrcmFixup.kext
 
-Still no need to fake devide ID.
+Still no need to declare compatible devide ID to any other code.
 
 Sysinf will show `AirPort Extreme  (0x14E4, 0x23)`.
 
