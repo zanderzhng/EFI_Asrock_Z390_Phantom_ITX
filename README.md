@@ -15,14 +15,14 @@
 | Audio | AppleALC.kext |  |
 | Ethernet | IntelMausiEthernet.kext |  |
 | Wi-Fi | AirportBrcmFixup.kext | Wi-Fi work without this actually. The device information will show Thrid Party Card instead. |
-| BLE | BrcmNonPatchRAM2.kext | Modified, check commit history. |
+| BLE | BrcmBluetoothInjector.kext, BrcmFirmwareData.kext, BrcmPatchRAM2.kext | [credit to nickhx](https://osxlatitude.com/forums/topic/11540-dw1820a-for-7490-help/?do=findComment&comment=92833) |
 ## Researches
 
 ### Wi-Fi
 
 #### Without AirportBrcmFixup.kext
 
-DW1820A's Wi-Fi works OOB, which means you don't have to add any kext nor options for 
+DW1820A's Wi-Fi works OOB, which means you don't have to add any kext nor paraments.
 
 DW1820A's device ID `14e4:43a3` was included in `IO80211Family.kext`, and there's no need to fake it into any card else in Clover's device tab.
 
@@ -42,26 +42,14 @@ Firmware Version says `  Firmware Version:	Broadcom BCM43xx 1.0 (7.77.61.2 AirPo
 
 DW1820A's bluetooth module requires [firmware uploading(RAMUSB)](https://github.com/RehabMan/OS-X-BrcmPatchRAM#brcmpatchram).
 
-By shutting down the system ( maybe also disconnect the power supply ), and waiting long enough (likely 5 minutes), the uploaded firmware will be released.
+By shutting down the system ( maybe also disconnect the power supply ), and waiting long enough (likely 20 secs), the uploaded firmware will be released.
 
-If we enter macOS now, without a bluetooth firmware uploader(`BrcmFirmwareData.kext` or `BrcmFirmwareRepo.kext`), the bluetooth won't work, and the [firmware version will be 4096](https://github.com/RehabMan/OS-X-BrcmPatchRAM#troubleshooting).
+If we enter macOS now, without a bluetooth firmware uploader(`BrcmFirmwareData.kext` or `BrcmFirmwareRepo.kext`), the bluetooth won't work, and the [firmware version will be 4096](https://github.com/RehabMan/OS-X-BrcmPatchRAM#troubleshooting), means no firmware was uploaded.
 
-#### Upload firmware via macOS
+#### Upload firmware
 
-I havn't firgure out how to upload firmware via macOS correctly.
+So thanks to [nickhx from osxlatitude](https://osxlatitude.com/forums/topic/11540-dw1820a-for-7490-help/?do=findComment&comment=92833) I finally uploaded the firmware via macOS corectlly. It worked pretty well.
 
-Using original `BrcmFirmwareData.kext` or `BrcmFirmwareRepo.kext`, I did see the bluetooth changed into version 5799 ( meaning firmware was uploaded ), but bluetooth won't work. It's hard to connect to bluetooth devices, and devices will keep disconnecting.
+Although RehabMan's repo mentioned you shouldn't combine bluetoothinjector with data nor repo but that seems to be necessary with 10.15 Catalina ( and 10.14 Mojave ).
 
-I thought it might be the firmware in the original kext being too old, so I tried recompiling the kext with firmware extracted from newest driver. The version changed into 4689, but still bluetooth was not working correctly.
-
-And if I reboot into windows after this incorrect uploading, the device manager will told me that DW1820A was not correctly configured. I have to release the firmware first.
-
-#### Upload firmware via Windows
-
-The incorrect firmware must be released first, otherwise DW1820A will enter a weird state, as mentioned above.
-
-Currently I'm uploading the firmware with `Windows`, using driver downloaded from [DELL](https://www.dell.com/support/home/us/en/19/drivers/driversdetails?driverid=99v46&lwp=rt), firmware version 4689.
-
-After uploading, rebooting into macOS with only modified `BrcmNonPatchRAM2.kext` placed inside `clover/kexts/other`, the bluetooth will work. Although the manual metioned [it still depends on BrcmPatchRam2](https://github.com/RehabMan/OS-X-BrcmPatchRAM#installation).
-
-Someone mentioned he could upload the firmware via `Windows in virtual machine`. That should be able to save some rebooting.
+Anyone interested in the situation where we can't upload firmware via macOS and have to upload it via Windows please refer to previous commit.
