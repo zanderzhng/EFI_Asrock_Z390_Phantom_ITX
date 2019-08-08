@@ -1,0 +1,178 @@
+16:018  10:379  Found BIOS RSDP at FCE60
+16:018  0:000  Printing ACPI tables from RSDP FCE60 ...
+16:018  0:000   FCE60: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+16:018  0:000    (Xsdt: 5F4AF0A8, Rsdt: 5F4AF028)
+16:018  0:000    5F4AF0A8: 'XSDT', 'A M I', Rev: 1, Len: 204
+16:018  0:000    5F4AF028: 'RSDT', 'A M I', Rev: 1, Len: 120
+16:018  0:000    Tables in Xsdt: 21
+16:018  0:000    0. 5F4F0B80: 'FACP', 'A M I', Rev: 6, Len: 276
+16:018  0:000        (Dsdt: 5F4AF208, Facs: 5F57E080, XDsdt: 5F4AF208, XFacs: 0)
+16:018  0:000        5F4AF208: 'DSDT', 'A M I', Rev: 2, Len: 268657
+16:022  0:004        5F57E080: 'FACS', Ver: 2, Len: 64
+16:022  0:000    1. 5F4F0C98: 'APIC', 'A M I', Rev: 4, Len: 244
+16:022  0:000    2. 5F4F0D90: 'FPDT', 'A M I', Rev: 1, Len: 68
+16:022  0:000    3. 5F4F0DD8: 'FIDT', 'A M I', Rev: 1, Len: 156
+16:022  0:000    4. 5F4F0E78: 'MCFG', 'A M I', Rev: 1, Len: 60
+16:022  0:000    5. 5F4F0EB8: 'SSDT', 'SataTabl', Rev: 1, Len: 888
+16:022  0:000    6. 5F4F1230: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6940
+16:022  0:000    7. 5F4F2D50: 'AAFT', 'OEMAAFT', Rev: 1, Len: 552
+16:022  0:000    8. 5F4F2F78: 'SSDT', 'SaSsdt', Rev: 2, Len: 12742
+16:022  0:000    9. 5F4F6140: 'SSDT', 'PegSsdt', Rev: 2, Len: 8987
+16:022  0:000    10. 5F4F8460: 'HPET', 'A M I', Rev: 1, Len: 56
+16:022  0:000    11. 5F4F8498: 'SSDT', 'xh_cfsd4', Rev: 2, Len: 10576
+16:022  0:000    12. 5F4FADE8: 'UEFI', 'A M I', Rev: 1, Len: 66
+16:022  0:000    13. 5F4FAE30: 'LPIT', 'A M I', Rev: 1, Len: 92
+16:022  0:000    14. 5F4FAE90: 'SSDT', 'TbtTypeC', Rev: 2, Len: 5346
+16:022  0:000    15. 5F4FC378: 'DBGP', 'A M I', Rev: 1, Len: 52
+16:022  0:000    16. 5F4FC3B0: 'DBG2', 'A M I', Rev: 0, Len: 84
+16:022  0:000    17. 5F4FC408: 'SSDT', 'UsbCTabl', Rev: 2, Len: 7015
+16:022  0:000    18. 5F4FDF70: 'SSDT', 'ADebTabl', Rev: 2, Len: 324
+16:022  0:000    19. 5F4FE0B8: 'BGRT', 'A M I', Rev: 1, Len: 56
+16:022  0:000    20. 5F4FE0F0: 'WSMT', 'A M I', Rev: 1, Len: 40
+16:022  0:000    Tables in Rsdt: 21
+16:022  0:000    0. 5F4AF180: 'FACP', 'A M I', Rev: 2, Len: 132
+16:022  0:000        (Dsdt: 5F4AF208, Facs: 5F57E040)
+16:022  0:000        5F4AF208: 'DSDT', 'A M I', Rev: 2, Len: 268657
+16:026  0:004        5F57E040: 'FACS', Ver: 0, Len: 64
+16:026  0:000    1. 5F4F0C98: 'APIC', 'A M I', Rev: 4, Len: 244
+16:026  0:000    2. 5F4F0D90: 'FPDT', 'A M I', Rev: 1, Len: 68
+16:026  0:000    3. 5F4F0DD8: 'FIDT', 'A M I', Rev: 1, Len: 156
+16:026  0:000    4. 5F4F0E78: 'MCFG', 'A M I', Rev: 1, Len: 60
+16:026  0:000    5. 5F4F0EB8: 'SSDT', 'SataTabl', Rev: 1, Len: 888
+16:026  0:000    6. 5F4F1230: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6940
+16:026  0:000    7. 5F4F2D50: 'AAFT', 'OEMAAFT', Rev: 1, Len: 552
+16:026  0:000    8. 5F4F2F78: 'SSDT', 'SaSsdt', Rev: 2, Len: 12742
+16:026  0:000    9. 5F4F6140: 'SSDT', 'PegSsdt', Rev: 2, Len: 8987
+16:026  0:000    10. 5F4F8460: 'HPET', 'A M I', Rev: 1, Len: 56
+16:026  0:000    11. 5F4F8498: 'SSDT', 'xh_cfsd4', Rev: 2, Len: 10576
+16:026  0:000    12. 5F4FADE8: 'UEFI', 'A M I', Rev: 1, Len: 66
+16:026  0:000    13. 5F4FAE30: 'LPIT', 'A M I', Rev: 1, Len: 92
+16:026  0:000    14. 5F4FAE90: 'SSDT', 'TbtTypeC', Rev: 2, Len: 5346
+16:026  0:000    15. 5F4FC378: 'DBGP', 'A M I', Rev: 1, Len: 52
+16:026  0:000    16. 5F4FC3B0: 'DBG2', 'A M I', Rev: 0, Len: 84
+16:026  0:000    17. 5F4FC408: 'SSDT', 'UsbCTabl', Rev: 2, Len: 7015
+16:026  0:000    18. 5F4FDF70: 'SSDT', 'ADebTabl', Rev: 2, Len: 324
+16:026  0:000    19. 5F4FE0B8: 'BGRT', 'A M I', Rev: 1, Len: 56
+16:026  0:000    20. 5F4FE0F0: 'WSMT', 'A M I', Rev: 1, Len: 40
+16:026  0:000  Found UEFI Acpi 2.0 RSDP at 5F4AF000
+16:026  0:000  Saving ACPI tables from RSDP 5F4AF000 to EFI\CLOVER\ACPI\origin ...
+16:026  0:000   5F4AF000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+16:035  0:009    (Xsdt: 5F4AF0A8, Rsdt: 5F4AF028)
+16:035  0:000    5F4AF0A8: 'XSDT', 'A M I', Rev: 1, Len: 204 -> XSDT.aml
+16:044  0:008    5F4AF028: 'RSDT', 'A M I', Rev: 1, Len: 120 -> RSDT.aml
+16:052  0:008    Tables in Xsdt: 21
+16:052  0:000    0. 5F4F0B80: 'FACP', 'A M I', Rev: 6, Len: 276 -> FACP.aml
+16:061  0:008        (Dsdt: 5F4AF208, Facs: 5F57E080, XDsdt: 5F4AF208, XFacs: 0)
+16:061  0:000        5F4AF208: 'DSDT', 'A M I', Rev: 2, Len: 268657 -> DSDT.aml
+16:081  0:019        5F57E080: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+16:089  0:008    1. 5F4F0C98: 'APIC', 'A M I', Rev: 4, Len: 244 -> APIC.aml
+16:097  0:008    2. 5F4F0D90: 'FPDT', 'A M I', Rev: 1, Len: 68 -> FPDT.aml
+16:106  0:008    3. 5F4F0DD8: 'FIDT', 'A M I', Rev: 1, Len: 156 -> FIDT.aml
+16:114  0:008    4. 5F4F0E78: 'MCFG', 'A M I', Rev: 1, Len: 60 -> MCFG.aml
+16:123  0:008    5. 5F4F0EB8: 'SSDT', 'SataTabl', Rev: 1, Len: 888 -> SSDT-0-SataTabl.aml
+16:132  0:009    6. 5F4F1230: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6940 -> SSDT-1-CpuSsdt.aml (Found hidden SSDT 9 pcs)
+16:142  0:009        * 5F025518: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1607  53 53 44 54 47 06 00 00 02 7E 50 6D 52 65 66 00 Internal length = 1607 -> SSDT-x1_0-Cpu0Ist.aml
+16:149  0:007        * 5EFEC018: 'SSDT', 'ApIst', Rev: 2, Len: 1532  53 53 44 54 FC 05 00 00 02 23 50 6D 52 65 66 00 Internal length = 1532 -> SSDT-x1_1-ApIst.aml
+16:157  0:007        * 5EFEC698: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1024  53 53 44 54 00 04 00 00 02 D9 50 6D 52 65 66 00 Internal length = 1024 -> SSDT-x1_2-Cpu0Cst.aml
+16:164  0:007        * 5EFEA018: 'SSDT', 'ApCst', Rev: 2, Len: 778  53 53 44 54 0A 03 00 00 02 E9 50 6D 52 65 66 00 Internal length = 778 -> SSDT-x1_3-ApCst.aml
+16:172  0:007        * 5EFEDC18: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 283  53 53 44 54 1B 01 00 00 02 61 50 6D 52 65 66 00 Internal length = 283 -> SSDT-x1_4-Cpu0Hwp.aml
+16:180  0:007        * 5EFEA418: 'SSDT', 'ApHwp', Rev: 2, Len: 791  53 53 44 54 17 03 00 00 02 E3 50 6D 52 65 66 00 Internal length = 791 -> SSDT-x1_5-ApHwp.aml
+16:188  0:007        * 5EFED198: 'SSDT', 'HwpLvt', Rev: 2, Len: 1828  53 53 44 54 24 07 00 00 02 CA 50 6D 52 65 66 00 Internal length = 1828 -> SSDT-x1_6-HwpLvt.aml
+16:195  0:007        * 5EFED018: 'SSDT', 'Cpu0Psd', Rev: 2, Len: 244  53 53 44 54 F4 00 00 00 02 37 50 6D 52 65 66 00 Internal length = 244 -> SSDT-x1_7-Cpu0Psd.aml
+16:203  0:007        * 5EFEB018: 'SSDT', 'ApPsd', Rev: 2, Len: 2736  53 53 44 54 B0 0A 00 00 02 AB 50 6D 52 65 66 00 Internal length = 2736 -> SSDT-x1_8-ApPsd.aml
+16:211  0:007  
+16:211  0:000    7. 5F4F2D50: 'AAFT', 'OEMAAFT', Rev: 1, Len: 552 -> AAFT.aml
+16:218  0:007    8. 5F4F2F78: 'SSDT', 'SaSsdt', Rev: 2, Len: 12742 -> SSDT-2-SaSsdt.aml
+16:226  0:008    9. 5F4F6140: 'SSDT', 'PegSsdt', Rev: 2, Len: 8987 -> SSDT-3-PegSsdt.aml
+16:235  0:008    10. 5F4F8460: 'HPET', 'A M I', Rev: 1, Len: 56 -> HPET.aml
+16:242  0:007    11. 5F4F8498: 'SSDT', 'xh_cfsd4', Rev: 2, Len: 10576 -> SSDT-4-xh_cfsd4.aml
+16:251  0:008    12. 5F4FADE8: 'UEFI', 'A M I', Rev: 1, Len: 66 -> UEFI.aml
+16:259  0:008    13. 5F4FAE30: 'LPIT', 'A M I', Rev: 1, Len: 92 -> LPIT.aml
+16:267  0:008    14. 5F4FAE90: 'SSDT', 'TbtTypeC', Rev: 2, Len: 5346 -> SSDT-5-TbtTypeC.aml
+16:276  0:009    15. 5F4FC378: 'DBGP', 'A M I', Rev: 1, Len: 52 -> DBGP.aml
+16:284  0:007    16. 5F4FC3B0: 'DBG2', 'A M I', Rev: 0, Len: 84 -> DBG2.aml
+16:292  0:007    17. 5F4FC408: 'SSDT', 'UsbCTabl', Rev: 2, Len: 7015 -> SSDT-6-UsbCTabl.aml
+16:301  0:008    18. 5F4FDF70: 'SSDT', 'ADebTabl', Rev: 2, Len: 324 -> SSDT-7-ADebTabl.aml
+16:309  0:007    19. 5F4FE0B8: 'BGRT', 'A M I', Rev: 1, Len: 56 -> BGRT.aml
+16:316  0:007    20. 5F4FE0F0: 'WSMT', 'A M I', Rev: 1, Len: 40 -> WSMT.aml
+16:324  0:007    Tables in Rsdt: 21
+16:324  0:000    0. 5F4AF180: 'FACP', 'A M I', Rev: 2, Len: 132 -> RSDT-FACP.aml
+16:331  0:007        (Dsdt: 5F4AF208, Facs: 5F57E040)
+16:331  0:000        5F4AF208: 'DSDT', 'A M I', Rev: 2, Len: 268657
+16:336  0:004        5F57E040: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+16:343  0:007    1. 5F4F0C98: 'APIC', 'A M I', Rev: 4, Len: 244
+16:343  0:000    2. 5F4F0D90: 'FPDT', 'A M I', Rev: 1, Len: 68
+16:343  0:000    3. 5F4F0DD8: 'FIDT', 'A M I', Rev: 1, Len: 156
+16:343  0:000    4. 5F4F0E78: 'MCFG', 'A M I', Rev: 1, Len: 60
+16:343  0:000    5. 5F4F0EB8: 'SSDT', 'SataTabl', Rev: 1, Len: 888
+16:343  0:000    6. 5F4F1230: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6940
+16:343  0:000    7. 5F4F2D50: 'AAFT', 'OEMAAFT', Rev: 1, Len: 552
+16:343  0:000    8. 5F4F2F78: 'SSDT', 'SaSsdt', Rev: 2, Len: 12742
+16:343  0:000    9. 5F4F6140: 'SSDT', 'PegSsdt', Rev: 2, Len: 8987
+16:343  0:000    10. 5F4F8460: 'HPET', 'A M I', Rev: 1, Len: 56
+16:343  0:000    11. 5F4F8498: 'SSDT', 'xh_cfsd4', Rev: 2, Len: 10576
+16:343  0:000    12. 5F4FADE8: 'UEFI', 'A M I', Rev: 1, Len: 66
+16:343  0:000    13. 5F4FAE30: 'LPIT', 'A M I', Rev: 1, Len: 92
+16:343  0:000    14. 5F4FAE90: 'SSDT', 'TbtTypeC', Rev: 2, Len: 5346
+16:343  0:000    15. 5F4FC378: 'DBGP', 'A M I', Rev: 1, Len: 52
+16:343  0:000    16. 5F4FC3B0: 'DBG2', 'A M I', Rev: 0, Len: 84
+16:343  0:000    17. 5F4FC408: 'SSDT', 'UsbCTabl', Rev: 2, Len: 7015
+16:343  0:000    18. 5F4FDF70: 'SSDT', 'ADebTabl', Rev: 2, Len: 324
+16:343  0:000    19. 5F4FE0B8: 'BGRT', 'A M I', Rev: 1, Len: 56
+16:343  0:000    20. 5F4FE0F0: 'WSMT', 'A M I', Rev: 1, Len: 40
+16:343  0:000  Found UEFI Acpi 1.0 RSDP at 5F4AF000
+16:343  0:000  Printing ACPI tables from RSDP 5F4AF000 ...
+16:343  0:000   5F4AF000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+16:343  0:000    (Xsdt: 5F4AF0A8, Rsdt: 5F4AF028)
+16:343  0:000    5F4AF0A8: 'XSDT', 'A M I', Rev: 1, Len: 204
+16:343  0:000    5F4AF028: 'RSDT', 'A M I', Rev: 1, Len: 120
+16:343  0:000    Tables in Xsdt: 21
+16:343  0:000    0. 5F4F0B80: 'FACP', 'A M I', Rev: 6, Len: 276
+16:343  0:000        (Dsdt: 5F4AF208, Facs: 5F57E080, XDsdt: 5F4AF208, XFacs: 0)
+16:343  0:000        5F4AF208: 'DSDT', 'A M I', Rev: 2, Len: 268657
+16:347  0:004        5F57E080: 'FACS', Ver: 2, Len: 64
+16:347  0:000    1. 5F4F0C98: 'APIC', 'A M I', Rev: 4, Len: 244
+16:347  0:000    2. 5F4F0D90: 'FPDT', 'A M I', Rev: 1, Len: 68
+16:347  0:000    3. 5F4F0DD8: 'FIDT', 'A M I', Rev: 1, Len: 156
+16:347  0:000    4. 5F4F0E78: 'MCFG', 'A M I', Rev: 1, Len: 60
+16:347  0:000    5. 5F4F0EB8: 'SSDT', 'SataTabl', Rev: 1, Len: 888
+16:347  0:000    6. 5F4F1230: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6940
+16:347  0:000    7. 5F4F2D50: 'AAFT', 'OEMAAFT', Rev: 1, Len: 552
+16:347  0:000    8. 5F4F2F78: 'SSDT', 'SaSsdt', Rev: 2, Len: 12742
+16:347  0:000    9. 5F4F6140: 'SSDT', 'PegSsdt', Rev: 2, Len: 8987
+16:347  0:000    10. 5F4F8460: 'HPET', 'A M I', Rev: 1, Len: 56
+16:347  0:000    11. 5F4F8498: 'SSDT', 'xh_cfsd4', Rev: 2, Len: 10576
+16:347  0:000    12. 5F4FADE8: 'UEFI', 'A M I', Rev: 1, Len: 66
+16:347  0:000    13. 5F4FAE30: 'LPIT', 'A M I', Rev: 1, Len: 92
+16:347  0:000    14. 5F4FAE90: 'SSDT', 'TbtTypeC', Rev: 2, Len: 5346
+16:347  0:000    15. 5F4FC378: 'DBGP', 'A M I', Rev: 1, Len: 52
+16:347  0:000    16. 5F4FC3B0: 'DBG2', 'A M I', Rev: 0, Len: 84
+16:347  0:000    17. 5F4FC408: 'SSDT', 'UsbCTabl', Rev: 2, Len: 7015
+16:347  0:000    18. 5F4FDF70: 'SSDT', 'ADebTabl', Rev: 2, Len: 324
+16:347  0:000    19. 5F4FE0B8: 'BGRT', 'A M I', Rev: 1, Len: 56
+16:347  0:000    20. 5F4FE0F0: 'WSMT', 'A M I', Rev: 1, Len: 40
+16:347  0:000    Tables in Rsdt: 21
+16:347  0:000    0. 5F4AF180: 'FACP', 'A M I', Rev: 2, Len: 132
+16:347  0:000        (Dsdt: 5F4AF208, Facs: 5F57E040)
+16:347  0:000        5F4AF208: 'DSDT', 'A M I', Rev: 2, Len: 268657
+16:351  0:004        5F57E040: 'FACS', Ver: 0, Len: 64
+16:351  0:000    1. 5F4F0C98: 'APIC', 'A M I', Rev: 4, Len: 244
+16:351  0:000    2. 5F4F0D90: 'FPDT', 'A M I', Rev: 1, Len: 68
+16:351  0:000    3. 5F4F0DD8: 'FIDT', 'A M I', Rev: 1, Len: 156
+16:351  0:000    4. 5F4F0E78: 'MCFG', 'A M I', Rev: 1, Len: 60
+16:351  0:000    5. 5F4F0EB8: 'SSDT', 'SataTabl', Rev: 1, Len: 888
+16:351  0:000    6. 5F4F1230: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6940
+16:351  0:000    7. 5F4F2D50: 'AAFT', 'OEMAAFT', Rev: 1, Len: 552
+16:351  0:000    8. 5F4F2F78: 'SSDT', 'SaSsdt', Rev: 2, Len: 12742
+16:351  0:000    9. 5F4F6140: 'SSDT', 'PegSsdt', Rev: 2, Len: 8987
+16:351  0:000    10. 5F4F8460: 'HPET', 'A M I', Rev: 1, Len: 56
+16:351  0:000    11. 5F4F8498: 'SSDT', 'xh_cfsd4', Rev: 2, Len: 10576
+16:351  0:000    12. 5F4FADE8: 'UEFI', 'A M I', Rev: 1, Len: 66
+16:351  0:000    13. 5F4FAE30: 'LPIT', 'A M I', Rev: 1, Len: 92
+16:351  0:000    14. 5F4FAE90: 'SSDT', 'TbtTypeC', Rev: 2, Len: 5346
+16:351  0:000    15. 5F4FC378: 'DBGP', 'A M I', Rev: 1, Len: 52
+16:351  0:000    16. 5F4FC3B0: 'DBG2', 'A M I', Rev: 0, Len: 84
+16:351  0:000    17. 5F4FC408: 'SSDT', 'UsbCTabl', Rev: 2, Len: 7015
+16:351  0:000    18. 5F4FDF70: 'SSDT', 'ADebTabl', Rev: 2, Len: 324
+16:351  0:000    19. 5F4FE0B8: 'BGRT', 'A M I', Rev: 1, Len: 56
+16:351  0:000    20. 5F4FE0F0: 'WSMT', 'A M I', Rev: 1, Len: 40
