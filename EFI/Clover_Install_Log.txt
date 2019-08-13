@@ -1,6 +1,6 @@
 
-Clover EFI installer log - Thu Aug  8 15:28:34 CST 2019
-Installer version: v2.5k r5038 EFI bootloader
+Clover EFI installer log - Tue Aug 13 12:17:00 CST 2019
+Installer version: v2.5k r5045 EFI bootloader
 ======================================================
 Changes:
 Mount ESP Beta (r5030): use of a new command line called espfinder to find the ESP that belong with the target volume
@@ -41,8 +41,8 @@ A backup is always made to the root of the target volume.
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      APFS Container Scheme -                      +499.9 GB   disk1
                                  Physical Store disk0s2
-   1:                APFS Volume M2                      357.9 GB   disk1s1
-   2:                APFS Volume Preboot                 45.7 MB    disk1s2
+   1:                APFS Volume M2                      338.9 GB   disk1s1
+   2:                APFS Volume Preboot                 44.6 MB    disk1s2
    3:                APFS Volume Recovery                510.3 MB   disk1s3
    4:                APFS Volume VM                      2.1 GB     disk1s4
 
@@ -52,12 +52,13 @@ ESP BSD Name is disk0s1
 ======================================================
 Backing up EFI files
 
-Backing up /Volumes/M2/EFIROOTDIR/EFI folder to /Volumes/M2/EFI-Backups/r5033/2019-08-08-15h28/EFI
+Backing up /Volumes/M2/EFIROOTDIR/EFI folder to /Volumes/M2/EFI-Backups/r5038/2019-08-13-12h17/EFI
 ======================================================
 Installing BootSectors/BootLoader
 
 Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
 Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+Removing UEFI/MemoryFix.efi because OsxAptioFix3Drv.efi is installed
 ======================================================
 Installing RC Scripts
 
