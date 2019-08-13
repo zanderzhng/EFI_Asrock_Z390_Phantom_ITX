@@ -126,6 +126,62 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
+		<key>Arbitrary</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>iGPU</string>
+				<key>CustomProperties</key>
+				<array>
+					<dict>
+						<key>Disabled</key>
+						<true/>
+						<key>Key</key>
+						<string>model</string>
+						<key>Value</key>
+						<string>UHD Graphics 630</string>
+					</dict>
+					<dict>
+						<key>Disabled</key>
+						<true/>
+						<key>Key</key>
+						<string>AAPL,slot-name</string>
+						<key>Value</key>
+						<string>Built In</string>
+					</dict>
+					<dict>
+						<key>Disabled</key>
+						<true/>
+						<key>Key</key>
+						<string>device_type</string>
+						<key>Value</key>
+						<string>Display Controller</string>
+					</dict>
+					<dict>
+						<key>Disabled</key>
+						<true/>
+						<key>Key</key>
+						<string>device-id</string>
+						<key>Value</key>
+						<data>
+						mz4HAA==
+						</data>
+					</dict>
+					<dict>
+						<key>Disabled</key>
+						<true/>
+						<key>Key</key>
+						<string>vendor-id</string>
+						<key>Value</key>
+						<data>
+						hoAAAA==
+						</data>
+					</dict>
+				</array>
+				<key>PciAddr</key>
+				<string>00:02.0</string>
+			</dict>
+		</array>
 		<key>Audio</key>
 		<dict>
 			<key>AFGLowPowerState</key>
