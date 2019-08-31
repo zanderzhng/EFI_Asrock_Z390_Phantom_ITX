@@ -110,7 +110,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>darkwake=0 slide=0 keepsyms=1 debug=0x100 -v</string>
+		<string>darkwake=8 slide=0 keepsyms=1 debug=0x100 -v</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -346,6 +346,8 @@
 					<integer>2400</integer>
 					<key>Part</key>
 					<string>VMA44UI-MEC1U2AW2</string>
+					<key>Serial</key>
+					<string>51247E4Fh</string>
 					<key>Size</key>
 					<integer>16384</integer>
 					<key>Slot</key>
@@ -360,6 +362,8 @@
 					<integer>2400</integer>
 					<key>Part</key>
 					<string>VMA44UI-MEC1U2AW2</string>
+					<key>Serial</key>
+					<string>51247E4Fh</string>
 					<key>Size</key>
 					<integer>16384</integer>
 					<key>Slot</key>
@@ -374,6 +378,8 @@
 					<integer>2400</integer>
 					<key>Part</key>
 					<string>VMA44UI-MEC1U2AW2</string>
+					<key>Serial</key>
+					<string>51247E49h</string>
 					<key>Size</key>
 					<integer>16384</integer>
 					<key>Slot</key>
@@ -388,6 +394,8 @@
 					<integer>2400</integer>
 					<key>Part</key>
 					<string>VMA44UI-MEC1U2AW2</string>
+					<key>Serial</key>
+					<string>51247E49h</string>
 					<key>Size</key>
 					<integer>16384</integer>
 					<key>Slot</key>
